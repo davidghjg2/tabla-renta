@@ -32,7 +32,7 @@
             txtSalarioNominal = new TextBox();
             btnCalcular = new Button();
             lblSalarioNominal = new Label();
-            txtDescuento = new TextBox();
+            txtSalarioFinal = new TextBox();
             txtRenta = new TextBox();
             lblSalarioDescuento = new Label();
             lblRenta = new Label();
@@ -73,6 +73,7 @@
             btnCalcular.TabIndex = 1;
             btnCalcular.Text = "Calcular";
             btnCalcular.UseVisualStyleBackColor = true;
+            btnCalcular.Click += btnCalcular_Click;
             // 
             // lblSalarioNominal
             // 
@@ -84,14 +85,14 @@
             lblSalarioNominal.TabIndex = 3;
             lblSalarioNominal.Text = "Salario nominal";
             // 
-            // txtDescuento
+            // txtSalarioFinal
             // 
-            txtDescuento.Enabled = false;
-            txtDescuento.Font = new Font("Poppins", 9F);
-            txtDescuento.Location = new Point(209, 81);
-            txtDescuento.Name = "txtDescuento";
-            txtDescuento.Size = new Size(100, 25);
-            txtDescuento.TabIndex = 4;
+            txtSalarioFinal.Enabled = false;
+            txtSalarioFinal.Font = new Font("Poppins", 9F);
+            txtSalarioFinal.Location = new Point(209, 81);
+            txtSalarioFinal.Name = "txtSalarioFinal";
+            txtSalarioFinal.Size = new Size(100, 25);
+            txtSalarioFinal.TabIndex = 4;
             // 
             // txtRenta
             // 
@@ -185,12 +186,13 @@
             Controls.Add(lblRenta);
             Controls.Add(lblSalarioDescuento);
             Controls.Add(txtRenta);
-            Controls.Add(txtDescuento);
+            Controls.Add(txtSalarioFinal);
             Controls.Add(lblSalarioNominal);
             Controls.Add(btnCalcular);
             Controls.Add(txtSalarioNominal);
             Controls.Add(lblTitulo);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
@@ -211,5 +213,6 @@
         private Label lblExceso;
         private Label lblCuota;
         private Label lblPorcentaje;
+        private TextBox txtSalarioFinal;
     }
 }
