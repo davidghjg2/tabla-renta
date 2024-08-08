@@ -42,24 +42,25 @@
             this.lblExceso = new System.Windows.Forms.Label();
             this.lblCuota = new System.Windows.Forms.Label();
             this.lblPorcentaje = new System.Windows.Forms.Label();
+            this.lblsalarioNeto = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(10, 8);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(363, 34);
+            this.lblTitulo.Size = new System.Drawing.Size(341, 24);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Calculo de impuesto  sobre la renta";
             // 
             // txtSalarioNominal
             // 
-            this.txtSalarioNominal.Font = new System.Drawing.Font("Poppins", 9F);
+            this.txtSalarioNominal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txtSalarioNominal.Location = new System.Drawing.Point(10, 73);
             this.txtSalarioNominal.Name = "txtSalarioNominal";
-            this.txtSalarioNominal.Size = new System.Drawing.Size(114, 25);
+            this.txtSalarioNominal.Size = new System.Drawing.Size(114, 21);
             this.txtSalarioNominal.TabIndex = 2;
             this.txtSalarioNominal.Tag = "";
             this.txtSalarioNominal.Enter += new System.EventHandler(this.txtSalarioNominal_Enter);
@@ -67,7 +68,7 @@
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Font = new System.Drawing.Font("Poppins", 9F);
+            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnCalcular.Location = new System.Drawing.Point(10, 102);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(64, 24);
@@ -79,107 +80,118 @@
             // lblSalarioNominal
             // 
             this.lblSalarioNominal.AutoSize = true;
-            this.lblSalarioNominal.Font = new System.Drawing.Font("Poppins", 9F);
+            this.lblSalarioNominal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblSalarioNominal.Location = new System.Drawing.Point(10, 49);
             this.lblSalarioNominal.Name = "lblSalarioNominal";
-            this.lblSalarioNominal.Size = new System.Drawing.Size(104, 22);
+            this.lblSalarioNominal.Size = new System.Drawing.Size(94, 15);
             this.lblSalarioNominal.TabIndex = 3;
             this.lblSalarioNominal.Text = "Salario nominal";
             // 
             // txtSalarioFinal
             // 
             this.txtSalarioFinal.Enabled = false;
-            this.txtSalarioFinal.Font = new System.Drawing.Font("Poppins", 9F);
+            this.txtSalarioFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txtSalarioFinal.Location = new System.Drawing.Point(179, 73);
             this.txtSalarioFinal.Name = "txtSalarioFinal";
-            this.txtSalarioFinal.Size = new System.Drawing.Size(86, 25);
+            this.txtSalarioFinal.Size = new System.Drawing.Size(86, 21);
             this.txtSalarioFinal.TabIndex = 4;
             // 
             // txtRenta
             // 
             this.txtRenta.Enabled = false;
-            this.txtRenta.Font = new System.Drawing.Font("Poppins", 9F);
+            this.txtRenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txtRenta.Location = new System.Drawing.Point(179, 125);
             this.txtRenta.Name = "txtRenta";
-            this.txtRenta.Size = new System.Drawing.Size(86, 25);
+            this.txtRenta.Size = new System.Drawing.Size(86, 21);
             this.txtRenta.TabIndex = 5;
             // 
             // lblSalarioDescuento
             // 
             this.lblSalarioDescuento.AutoSize = true;
-            this.lblSalarioDescuento.Font = new System.Drawing.Font("Poppins", 9F);
+            this.lblSalarioDescuento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblSalarioDescuento.Location = new System.Drawing.Point(179, 49);
             this.lblSalarioDescuento.Name = "lblSalarioDescuento";
-            this.lblSalarioDescuento.Size = new System.Drawing.Size(210, 22);
+            this.lblSalarioDescuento.Size = new System.Drawing.Size(200, 15);
             this.lblSalarioDescuento.TabIndex = 6;
             this.lblSalarioDescuento.Text = "Salarios con descuento AFP e ISSS";
             // 
             // lblRenta
             // 
             this.lblRenta.AutoSize = true;
-            this.lblRenta.Font = new System.Drawing.Font("Poppins", 9F);
+            this.lblRenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblRenta.Location = new System.Drawing.Point(179, 102);
             this.lblRenta.Name = "lblRenta";
-            this.lblRenta.Size = new System.Drawing.Size(150, 22);
+            this.lblRenta.Size = new System.Drawing.Size(136, 15);
             this.lblRenta.TabIndex = 7;
             this.lblRenta.Text = "Impuesto sobre la renta";
             // 
             // lblInfo
             // 
             this.lblInfo.AutoSize = true;
-            this.lblInfo.Font = new System.Drawing.Font("Poppins SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInfo.Location = new System.Drawing.Point(10, 167);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(134, 34);
+            this.lblInfo.Size = new System.Drawing.Size(119, 24);
             this.lblInfo.TabIndex = 8;
             this.lblInfo.Text = "Informacion";
             // 
             // lblTramo
             // 
             this.lblTramo.AutoSize = true;
-            this.lblTramo.Font = new System.Drawing.Font("Poppins", 9F);
+            this.lblTramo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblTramo.Location = new System.Drawing.Point(10, 201);
             this.lblTramo.Name = "lblTramo";
-            this.lblTramo.Size = new System.Drawing.Size(56, 22);
+            this.lblTramo.Size = new System.Drawing.Size(56, 15);
             this.lblTramo.TabIndex = 9;
             this.lblTramo.Text = "TRAMO :";
             // 
             // lblExceso
             // 
             this.lblExceso.AutoSize = true;
-            this.lblExceso.Font = new System.Drawing.Font("Poppins", 9F);
+            this.lblExceso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblExceso.Location = new System.Drawing.Point(10, 232);
             this.lblExceso.Name = "lblExceso";
-            this.lblExceso.Size = new System.Drawing.Size(99, 22);
+            this.lblExceso.Size = new System.Drawing.Size(107, 15);
             this.lblExceso.TabIndex = 10;
             this.lblExceso.Text = "SOBRE EXCESO :";
             // 
             // lblCuota
             // 
             this.lblCuota.AutoSize = true;
-            this.lblCuota.Font = new System.Drawing.Font("Poppins", 9F);
+            this.lblCuota.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblCuota.Location = new System.Drawing.Point(10, 295);
             this.lblCuota.Name = "lblCuota";
-            this.lblCuota.Size = new System.Drawing.Size(82, 22);
+            this.lblCuota.Size = new System.Drawing.Size(79, 15);
             this.lblCuota.TabIndex = 11;
             this.lblCuota.Text = "CUOTA FIJA :";
             // 
             // lblPorcentaje
             // 
             this.lblPorcentaje.AutoSize = true;
-            this.lblPorcentaje.Font = new System.Drawing.Font("Poppins", 9F);
+            this.lblPorcentaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblPorcentaje.Location = new System.Drawing.Point(10, 263);
             this.lblPorcentaje.Name = "lblPorcentaje";
-            this.lblPorcentaje.Size = new System.Drawing.Size(148, 22);
+            this.lblPorcentaje.Size = new System.Drawing.Size(153, 15);
             this.lblPorcentaje.TabIndex = 12;
             this.lblPorcentaje.Text = "PORCENTAJE APLICADO :";
+            // 
+            // lblsalarioNeto
+            // 
+            this.lblsalarioNeto.AutoSize = true;
+            this.lblsalarioNeto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblsalarioNeto.Location = new System.Drawing.Point(10, 324);
+            this.lblsalarioNeto.Name = "lblsalarioNeto";
+            this.lblsalarioNeto.Size = new System.Drawing.Size(118, 15);
+            this.lblsalarioNeto.TabIndex = 11;
+            this.lblsalarioNeto.Text = "SALARIO LÍQUIDO : ";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(394, 338);
+            this.ClientSize = new System.Drawing.Size(394, 358);
             this.Controls.Add(this.lblPorcentaje);
+            this.Controls.Add(this.lblsalarioNeto);
             this.Controls.Add(this.lblCuota);
             this.Controls.Add(this.lblExceso);
             this.Controls.Add(this.lblTramo);
@@ -216,6 +228,7 @@
         private System.Windows.Forms.Label lblCuota;
         private System.Windows.Forms.Label lblPorcentaje;
         private System.Windows.Forms.TextBox txtSalarioFinal;
+        private System.Windows.Forms.Label lblsalarioNeto;
     }
 }
 
